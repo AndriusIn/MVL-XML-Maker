@@ -2,8 +2,8 @@
 Windows application which helps creating XML files for Grand Theft Auto Vice City Maxo's Vehicle Loader (MVL)
 ## Description
 This tool is similar to ALMOST610's "XML Builder" and helps making XML files for "Maxo's Vehicle Loader" easier.
-![alt text](https://drive.google.com/file/d/1T1a_yn8RxRAq1G05yx5CzL_eyR4oGk4b/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1VGgw9YGfm6I-cgG-R1I7A2-EHTc8hhCt/view?usp=sharing)
+![gui](https://drive.google.com/uc?export=view&id=1T1a_yn8RxRAq1G05yx5CzL_eyR4oGk4b)
+![game](https://drive.google.com/uc?export=view&id=1VGgw9YGfm6I-cgG-R1I7A2-EHTc8hhCt)
 ## Features
 1. Works for all vehicle types: bikes, boats, cars, helicopters and planes (Skimmer, RC Baron).
 2. You can select vehicle audio (engine, horn, siren, door).
