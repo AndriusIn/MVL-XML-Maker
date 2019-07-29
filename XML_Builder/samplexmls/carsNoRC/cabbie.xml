@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Cabbie</name>
+		<anims>null</anims>
+		<comprules>7952</comprules>
+		<extraflags>20000</extraflags>
+		<wheelmodel>253</wheelmodel>
+		<wheelscale>0.700000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>taxi</class>
+		<freq>1</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>6,76</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>278</enginefarsample>
+		<enginenearsample>14</enginenearsample>
+		<hornsample>4</hornsample>
+		<hornfreq>10842</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9900</sirenfreq>
+		<doorsounds>0</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>1750.000000</mass>
+		<percentsubmerged>75</percentsubmerged>
+		<steeringlock>40.000000</steeringlock>
+		<seatoffset>0.200000</seatoffset>
+		<damagemultiplier>0.400000</damagemultiplier>
+		<value>10000</value>
+		<flags>00000002</flags>
+
+		<dimensions>
+			<x>2.200000</x>
+			<y>5.000000</y>
+			<z>2.300000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.100000</y>
+			<z>0.050000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>1.050000</multiplier>
+			<loss>0.850000</loss>
+			<bias>0.540000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>4</numofgears>
+			<maxspeed>160.000000</maxspeed>
+			<acceleration>22.000000</acceleration>
+			<drivetype>R</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>7.000000</deceleration>
+			<bias>0.440000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>2.400000</forcelevel>
+			<dampening>0.090000</dampening>
+			<upperlimit>0.250000</upperlimit>
+			<lowerlimit>-0.150000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.500000</antidive>
+		</suspension>
+
+		<lights>
+			<front>1</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<specials>
+		<taxilight>
+			<alwayson>false</alwayson>
+			<colour>128,128,0</colour>
+
+			<position>
+				<x>0.0</x>
+				<y>0.0</y>
+				<z>0.95</z>
+			</position>
+		</taxilight>
+	</specials>
+
+</vehicle>

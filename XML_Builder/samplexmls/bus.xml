@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Bus</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>180000</extraflags>
+		<wheelmodel>255</wheelmodel>
+		<wheelscale>0.900000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>big</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>43,82</carcol>
+		<carcol>48,82</carcol>
+		<carcol>56,82</carcol>
+		<carcol>58,82</carcol>
+		<carcol>63,82</carcol>
+		<carcol>2,82</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>272</enginefarsample>
+		<enginenearsample>8</enginenearsample>
+		<hornsample>3</hornsample>
+		<hornfreq>11652</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9500</sirenfreq>
+		<doorsounds>3</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>5500.000000</mass>
+		<percentsubmerged>90</percentsubmerged>
+		<steeringlock>30.000000</steeringlock>
+		<seatoffset>0.200000</seatoffset>
+		<damagemultiplier>0.750000</damagemultiplier>
+		<value>15000</value>
+		<flags>00000003</flags>
+
+		<dimensions>
+			<x>2.900000</x>
+			<y>8.000000</y>
+			<z>3.600000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>1.500000</y>
+			<z>0.000000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.650000</multiplier>
+			<loss>0.850000</loss>
+			<bias>0.450000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>4</numofgears>
+			<maxspeed>130.000000</maxspeed>
+			<acceleration>9.000000</acceleration>
+			<drivetype>R</drivetype>
+			<enginetype>D</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>4.170000</deceleration>
+			<bias>0.400000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.200000</forcelevel>
+			<dampening>0.070000</dampening>
+			<upperlimit>0.450000</upperlimit>
+			<lowerlimit>-0.250000</lowerlimit>
+			<bias>0.450000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>1</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+</vehicle>

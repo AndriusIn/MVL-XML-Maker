@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>FBI Rancher</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>2001</extraflags>
+		<wheelmodel>254</wheelmodel>
+		<wheelscale>0.950000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>6,6</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>268</enginefarsample>
+		<enginenearsample>4</enginenearsample>
+		<hornsample>3</hornsample>
+		<hornfreq>17900</hornfreq>
+		<sirensample>27</sirensample>
+		<sirenfreq>10511</sirenfreq>
+		<doorsounds>2</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>3500.000000</mass>
+		<percentsubmerged>80</percentsubmerged>
+		<steeringlock>30.000000</steeringlock>
+		<seatoffset>0.440000</seatoffset>
+		<damagemultiplier>0.300000</damagemultiplier>
+		<value>40000</value>
+		<flags>0000C00B</flags>
+
+		<dimensions>
+			<x>2.400000</x>
+			<y>5.700000</y>
+			<z>2.500000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>-0.100000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.920000</multiplier>
+			<loss>0.780000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>5</numofgears>
+			<maxspeed>170.000000</maxspeed>
+			<acceleration>22.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>8.500000</deceleration>
+			<bias>0.500000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.100000</forcelevel>
+			<dampening>0.200000</dampening>
+			<upperlimit>0.340000</upperlimit>
+			<lowerlimit>-0.080000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.500000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<specials>
+		<emlightsingle>
+			<alwayson>false</alwayson>
+			<colour>70,70,255</colour>
+
+			<position>
+				<x>0.4</x>
+				<y>0.6</y>
+				<z>0.3</z>
+			</position>
+		</emlightsingle>
+	</specials>
+
+</vehicle>

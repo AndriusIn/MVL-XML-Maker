@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		<title>Flags</title>
+		<style type="text/css" media="all">
+body {
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-family: 'Verdana';
+}
+#wrapper {
+	width:900px;
+	margin:0 auto 0 auto;
+	position: relative;
+	background: #AADDFF;
+	border: 1px solid black;
+	border-top: 0;
+}
+#leftside {
+	width: 410px;
+	float: left;
+	text-align:left;
+	padding:20px;
+}
+#rightside {
+	width: 410px;
+	float: left;
+	text-align:left;
+	padding:20px;
+}
+h3 {
+	margin:0;
+}
+.clear {
+	clear:both;
+}
+tt {
+	font-weight:bold;
+}
+#error_e {
+	color: #c50002;
+	font-weight: bold;
+	font-size:12px;
+}
+		</style>
+		<script type="text/javascript">
+//<!--
+function isPowerOf2Or0(value) {
+	return (value==0 ? true : !((value-1)&value));
+}
+		
+function editToBoxesH() {
+	var value = parseInt(document.getElementById("hflags").value, 16);
+	
+	for(var i=0; i<27; i++) {
+		if(value & (1<<i)) {
+			document.getElementById("hflag"+i).checked = true;
+		}
+		else {
+			document.getElementById("hflag"+i).checked = false;
+		}
+	}
+}
+
+function boxesToEditH() {
+	var value = 0;
+	
+	for(var i=0; i<27; i++) {
+		if(document.getElementById("hflag"+i).checked) {
+			value |= 1<<i;
+		}
+	}
+	
+	document.getElementById("hflags").value = value.toString(16);
+}
+
+function editToBoxesE() {
+	var value = parseInt(document.getElementById("eflags").value, 16);
+	
+	for(var i=0; i<22; i++) {
+		if(value & (1<<i)) {
+			document.getElementById("eflag"+i).checked = true;
+		}
+		else {
+			document.getElementById("eflag"+i).checked = false;
+		}
+	}
+	
+	if(!isPowerOf2Or0(value & 0x3FF00)) {
+		document.getElementById("error_e").innerHTML = "Error: You may not set multiple AI flags for one vehicle.";
+	}
+	else {
+		document.getElementById("error_e").innerHTML = "";
+	}
+}
+
+function boxesToEditE() {
+	var value = 0;
+	
+	for(var i=0; i<22; i++) {
+		if(document.getElementById("eflag"+i).checked) {
+			value |= 1<<i;
+		}
+	}
+	
+	document.getElementById("eflags").value = value.toString(16);
+	
+	if(!isPowerOf2Or0(value & 0x3FF00)) {
+		document.getElementById("error_e").innerHTML = "Error: You may not set multiple AI flags for one vehicle.";
+	}
+	else {
+		document.getElementById("error_e").innerHTML = "";
+	}
+}
+
+function editToBoxesI() {
+	var value = parseInt(document.getElementById("iflags").value, 10);
+	
+	for(var i=0; i<8; i++) {
+		if(value & (1<<i)) {
+			document.getElementById("iflag"+i).checked = true;
+		}
+		else {
+			document.getElementById("iflag"+i).checked = false;
+		}
+	}
+}
+
+function boxesToEditI() {
+	var value = 0;
+	
+	for(var i=0; i<8; i++) {
+		if(document.getElementById("iflag"+i).checked) {
+			value |= 1<<i;
+		}
+	}
+	
+	document.getElementById("iflags").value = value.toString(10);
+}
+// -->
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="leftside">
+			<h3>Handling flags</h3><br>
+			<form method="get" action="#">
+				<div>
+				Value: <input value="0" id="hflags" onchange="editToBoxesH()" type="text"> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag0" type="checkbox"> - 00000001h - 1G_BOOST</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag1" type="checkbox"> - 00000002h - 2G_BOOST</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag2" type="checkbox"> - 00000004h - REV_BONNET</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag3" type="checkbox"> - 00000008h - HANGING_BOOT</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag4" type="checkbox"> - 00000010h - NO_DOORS</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag5" type="checkbox"> - 00000020h - IS_VAN</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag6" type="checkbox"> - 00000040h - IS_BUS</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag7" type="checkbox"> - 00000080h - IS_LOW</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag8" type="checkbox"> - 00000100h - DBL_EXHAUST</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag9" type="checkbox"> - 00000200h - TAILGATE_BOOT</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag10" type="checkbox"> - 00000400h - NOSWING_BOOT</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag11" type="checkbox"> - 00000800h - NONPLAYER_STABILISER</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag12" type="checkbox"> - 00001000h - NEUTRALHANDLING</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag13" type="checkbox"> - 00002000h - HAS_NO_ROOF</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag14" type="checkbox"> - 00004000h - IS_BIG</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag15" type="checkbox"> - 00008000h - HALOGEN_LIGHTS</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag16" type="checkbox"> - 00010000h - IS_BIKE</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag17" type="checkbox"> - 00020000h - IS_HELI</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag18" type="checkbox"> - 00040000h - IS_PLANE</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag19" type="checkbox"> - 00080000h - IS_BOAT</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag20" type="checkbox"> - 00100000h - NO_EXHAUST</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag21" type="checkbox"> - 00200000h - REARWHEEL_1ST</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag22" type="checkbox"> - 00400000h - HANDBRAKE_TYRE</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag23" type="checkbox"> - 00800000h - SIT_IN_BOAT</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag24" type="checkbox"> - 01000000h - FAT_REARW</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag25" type="checkbox"> - 02000000h - NARROW_FRONTW</tt> <br>
+				<tt><input onclick="boxesToEditH()" id="hflag26" type="checkbox"> - 04000000h - GOOD_INSAND</tt> <br>
+				</div>
+			</form>
+			</div>
+			<div id="rightside">
+				<h3>Extra flags</h3><br>
+				<form method="get" action="#">
+					<div>
+					Value: <input value="0" id="eflags" onchange="editToBoxesE()" type="text"> <br>
+					<span id="error_e"></span> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag0" type="checkbox"> - 00000001h - SIREN</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag1" type="checkbox"> - 00000002h - HYDRAULICS</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag2" type="checkbox"> - 00000004h - BARON</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag3" type="checkbox"> - 00000008h - BFROTATION</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag4" type="checkbox"> - 00000010h - EXHAUST</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag5" type="checkbox"> - 00000020h - ENGINEFLAP</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag6" type="checkbox"> - 00000040h - TANK</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag7" type="checkbox"> - 00000080h - FIRETRUCK</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag8" type="checkbox"> - 00000100h - AI_POLICE</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag9" type="checkbox"> - 00000200h - AI_SWAT</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag10" type="checkbox"> - 00000400h - AI_PREDATOR</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag11" type="checkbox"> - 00000800h - AI_TANK</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag12" type="checkbox"> - 00001000h - AI_BARRACKS</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag13" type="checkbox"> - 00002000h - AI_FBI</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag14" type="checkbox"> - 00004000h - AI_VICE</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag15" type="checkbox"> - 00008000h - AI_FIRETRUCK</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag16" type="checkbox"> - 00010000h - AI_AMBULANCE</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag17" type="checkbox"> - 00020000h - AI_TAXI</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag18" type="checkbox"> - 00040000h - RCAUDIO</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag19" type="checkbox"> - 00080000h - REVBEEP</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag20" type="checkbox"> - 00100000h - GEARTHUD</tt> <br>
+					<tt><input onclick="boxesToEditE()" id="eflag21" type="checkbox"> - 00200000h - NOMAXALTITUDE</tt> <br>
+					</div>
+				</form>
+				<br />
+				<h3>Immunity</h3><br>
+				<form method="get" action="#">
+					<div>
+					Value: <input value="0" id="iflags" onchange="editToBoxesI()" type="text"> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag0" type="checkbox"> - 1 - BULLETPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag1" type="checkbox"> - 2 - FIREPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag2" type="checkbox"> - 4 - EXPLOSIONPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag3" type="checkbox"> - 8 - COLLISIONPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag4" type="checkbox"> - 16 - MELEEPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag5" type="checkbox"> - 32 - reserved</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag6" type="checkbox"> - 64 - TIREDAMPROOF</tt> <br>
+					<tt><input onclick="boxesToEditI()" id="iflag7" type="checkbox"> - 128 - FLIPDAMPROOF</tt> <br>
+					</div>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+</body></html>

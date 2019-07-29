@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Sea Sparrow</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>0000</extraflags>
+		<wheelmodel>256</wheelmodel>
+		<wheelscale>0.700000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>75,2</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>268</enginefarsample>
+		<enginenearsample>0</enginenearsample>
+		<hornsample>3</hornsample>
+		<hornfreq>13857</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9000</sirenfreq>
+		<doorsounds>2</doorsounds>
+	</audio>
+
+	<helidata>
+		<helitype>water</helitype>
+		<weapons>sparrow</weapons>
+		<rotorradius>5.150000</rotorradius>
+		<rotordammult>0.800000</rotordammult>
+	</helidata>
+
+	<handling>
+		<mass>3000.000000</mass>
+		<percentsubmerged>5</percentsubmerged>
+		<steeringlock>30.000000</steeringlock>
+		<seatoffset>0.300000</seatoffset>
+		<damagemultiplier>0.600000</damagemultiplier>
+		<value>28000</value>
+		<flags>08028000</flags>
+
+		<dimensions>
+			<x>2.000000</x>
+			<y>5.000000</y>
+			<z>2.000000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>-0.100000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.650000</multiplier>
+			<loss>0.900000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>1</numofgears>
+			<maxspeed>200.000000</maxspeed>
+			<acceleration>16.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>5.000000</deceleration>
+			<bias>0.450000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>5.000000</forcelevel>
+			<dampening>0.100000</dampening>
+			<upperlimit>0.500000</upperlimit>
+			<lowerlimit>-0.050000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<aerohandling>
+		<thrust>0.350000</thrust>
+		<thrustfalloff>0.750000</thrustfalloff>
+		<yaw>-0.001000</yaw>
+		<yawstab>0.010000</yawstab>
+		<sideslip>0.100000</sideslip>
+		<roll>0.007500</roll>
+		<rollstab>8.000000</rollstab>
+		<pitch>0.007500</pitch>
+		<pitchstab>8.000000</pitchstab>
+		<formlift>0.600000</formlift>
+		<attacklift>0.012000</attacklift>
+		<moveres>0.997000</moveres>
+
+		<turnres>
+			<x>0.800000</x>
+			<y>0.840000</y>
+			<z>0.985000</z>
+		</turnres>
+
+		<speedres>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>7.000000</z>
+		</speedres>
+	</aerohandling>
+
+	<specials>
+		<heliweps>
+			<machinegunpos>
+				<x>0.0</x>
+				<y>4.8</y>
+				<z>-1.3</z>
+			</machinegunpos>
+		</heliweps>
+	</specials>
+
+</vehicle>

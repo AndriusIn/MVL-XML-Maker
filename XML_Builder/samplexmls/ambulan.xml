@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Ambulance</name>
+		<anims>van</anims>
+		<comprules>0</comprules>
+		<extraflags>10001</extraflags>
+		<wheelmodel>252</wheelmodel>
+		<wheelscale>0.900000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>1,3</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>270</enginefarsample>
+		<enginenearsample>6</enginenearsample>
+		<hornsample>0</hornsample>
+		<hornfreq>22295</hornfreq>
+		<sirensample>29</sirensample>
+		<sirenfreq>12688</sirenfreq>
+		<doorsounds>0</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>2600.000000</mass>
+		<percentsubmerged>90</percentsubmerged>
+		<steeringlock>35.000000</steeringlock>
+		<seatoffset>0.580000</seatoffset>
+		<damagemultiplier>0.330000</damagemultiplier>
+		<value>10000</value>
+		<flags>00000822</flags>
+
+		<dimensions>
+			<x>2.200000</x>
+			<y>6.500000</y>
+			<z>2.000000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>-0.100000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.950000</multiplier>
+			<loss>0.800000</loss>
+			<bias>0.470000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>5</numofgears>
+			<maxspeed>190.000000</maxspeed>
+			<acceleration>24.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>D</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>7.000000</deceleration>
+			<bias>0.550000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.400000</forcelevel>
+			<dampening>0.070000</dampening>
+			<upperlimit>0.400000</upperlimit>
+			<lowerlimit>-0.150000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<specials>
+		<emlights>
+			<alwayson>false</alwayson>
+			<colourone>255,0,0</colourone>
+			<colourtwo>255,255,255</colourtwo>
+			
+			<posleft>
+				<x>-1.1</x>
+				<y>0.9</y>
+				<z>1.6</z>
+			</posleft>
+			
+			<posright>
+				<x>1.1</x>
+				<y>0.9</y>
+				<z>1.6</z>
+			</posright>
+		</emlights>
+	</specials>
+
+</vehicle>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>RC Baron</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>40004</extraflags>
+		<wheelmodel>250</wheelmodel>
+		<wheelscale>0.250000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>14,75</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>423</enginefarsample>
+		<enginenearsample>17</enginenearsample>
+		<hornsample>0</hornsample>
+		<hornfreq>30000</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>15000</sirenfreq>
+		<doorsounds>1</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>150.000000</mass>
+		<percentsubmerged>99</percentsubmerged>
+		<steeringlock>25.000000</steeringlock>
+		<seatoffset>0.200000</seatoffset>
+		<damagemultiplier>0.080000</damagemultiplier>
+		<value>300</value>
+		<flags>00040000</flags>
+
+		<dimensions>
+			<x>0.800000</x>
+			<y>1.000000</y>
+			<z>0.200000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>-0.100000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>1.100000</multiplier>
+			<loss>0.750000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>1</numofgears>
+			<maxspeed>75.000000</maxspeed>
+			<acceleration>35.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>5.500000</deceleration>
+			<bias>0.500000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.600000</forcelevel>
+			<dampening>0.100000</dampening>
+			<upperlimit>0.280000</upperlimit>
+			<lowerlimit>-0.080000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<aerohandling>
+		<thrust>0.006000</thrust>
+		<thrustfalloff>2.000000</thrustfalloff>
+		<yaw>-0.003000</yaw>
+		<yawstab>0.100000</yawstab>
+		<sideslip>0.100000</sideslip>
+		<roll>0.020000</roll>
+		<rollstab>-0.080000</rollstab>
+		<pitch>0.005000</pitch>
+		<pitchstab>0.300000</pitchstab>
+		<formlift>0.040000</formlift>
+		<attacklift>0.250000</attacklift>
+		<moveres>1.000000</moveres>
+
+		<turnres>
+			<x>0.998000</x>
+			<y>0.995000</y>
+			<z>0.995000</z>
+		</turnres>
+
+		<speedres>
+			<x>0.000000</x>
+			<y>500.000000</y>
+			<z>0.000000</z>
+		</speedres>
+	</aerohandling>
+
+</vehicle>

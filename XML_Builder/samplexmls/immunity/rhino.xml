@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Rhino</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>0840</extraflags>
+		<wheelmodel>255</wheelmodel>
+		<wheelscale>1.500000</wheelscale>
+		<immunity>5</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+	</colors>
+
+	<audio>
+		<enginefarsample>272</enginefarsample>
+		<enginenearsample>8</enginenearsample>
+		<hornsample>7</hornsample>
+		<hornfreq>29711</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9600</sirenfreq>
+		<doorsounds>2</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>18000.000000</mass>
+		<percentsubmerged>90</percentsubmerged>
+		<steeringlock>20.000000</steeringlock>
+		<seatoffset>1.120000</seatoffset>
+		<damagemultiplier>0.090000</damagemultiplier>
+		<value>110000</value>
+		<flags>00004003</flags>
+
+		<dimensions>
+			<x>3.500000</x>
+			<y>8.000000</y>
+			<z>3.800000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>0.000000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.750000</multiplier>
+			<loss>0.800000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>4</numofgears>
+			<maxspeed>80.000000</maxspeed>
+			<acceleration>8.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>D</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>8.170000</deceleration>
+			<bias>0.500000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.800000</forcelevel>
+			<dampening>0.050000</dampening>
+			<upperlimit>0.350000</upperlimit>
+			<lowerlimit>-0.100000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+</vehicle>

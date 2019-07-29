@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Trashmaster</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>180000</extraflags>
+		<wheelmodel>255</wheelmodel>
+		<wheelscale>1.060000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>big</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>1,75</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>272</enginefarsample>
+		<enginenearsample>8</enginenearsample>
+		<hornsample>7</hornsample>
+		<hornfreq>31478</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9800</sirenfreq>
+		<doorsounds>2</doorsounds>
+	</audio>
+
+	<handling>
+		<mass>5500.000000</mass>
+		<percentsubmerged>90</percentsubmerged>
+		<steeringlock>30.000000</steeringlock>
+		<seatoffset>0.450000</seatoffset>
+		<damagemultiplier>0.200000</damagemultiplier>
+		<value>5000</value>
+		<flags>02004003</flags>
+
+		<dimensions>
+			<x>2.900000</x>
+			<y>8.000000</y>
+			<z>3.600000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>0.000000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.580000</multiplier>
+			<loss>0.800000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>4</numofgears>
+			<maxspeed>110.000000</maxspeed>
+			<acceleration>7.000000</acceleration>
+			<drivetype>R</drivetype>
+			<enginetype>D</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>3.170000</deceleration>
+			<bias>0.400000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>1.400000</forcelevel>
+			<dampening>0.060000</dampening>
+			<upperlimit>0.450000</upperlimit>
+			<lowerlimit>-0.250000</lowerlimit>
+			<bias>0.550000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+</vehicle>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>boat</type>
+		<name>Coast Guard</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>0000</extraflags>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>1,15</carcol>
+		<carcol>1,53</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>268</enginefarsample>
+		<enginenearsample>0</enginenearsample>
+		<hornsample>0</hornsample>
+		<hornfreq>26513</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9400</sirenfreq>
+		<doorsounds>1</doorsounds>
+
+		<boatengine>
+			<type>1</type>
+			<basevolume>20</basevolume>
+			<basefrequency>9000</basefrequency>
+			<volumeincrease>60.000000</volumeincrease>
+			<frequencyincrease>6000.000000</frequencyincrease>
+		</boatengine>
+	</audio>
+
+	<handling>
+		<mass>1200.000000</mass>
+		<percentsubmerged>14</percentsubmerged>
+		<steeringlock>24.000000</steeringlock>
+		<seatoffset>0.200000</seatoffset>
+		<damagemultiplier>0.180000</damagemultiplier>
+		<value>10000</value>
+		<flags>00080004</flags>
+
+		<dimensions>
+			<x>3.000000</x>
+			<y>7.500000</y>
+			<z>2.000000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>-0.300000</y>
+			<z>0.000000</z>
+		</centreofmass>
+
+		<boatsteering>
+			<bankforcemult>2.000000</bankforcemult>
+			<rudderturnforce>4.200000</rudderturnforce>
+			<speedsteerfalloff>0.700000</speedsteerfalloff>
+		</boatsteering>
+
+		<transmission>
+			<numofgears>5</numofgears>
+			<maxspeed>190.000000</maxspeed>
+			<acceleration>1.600000</acceleration>
+			<drivetype>R</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<boatbrakes>
+			<verticalwavehitlimit>0.050000</verticalwavehitlimit>
+			<forwardwavehitbrake>0.010000</forwardwavehitbrake>
+		</boatbrakes>
+
+		<boatsuspension>
+			<waterresvolumemult>1.000000</waterresvolumemult>
+			<waterdampingmult>3.000000</waterdampingmult>
+			<upperlimit>3.200000</upperlimit>
+			<handbrakedragmult>0.100000</handbrakedragmult>
+			<sideslipforce>2.500000</sideslipforce>
+			<antidive>0.000000</antidive>
+		</boatsuspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<boathandling>
+		<thrusty>0.500000</thrusty>
+		<thrustz>0.650000</thrustz>
+		<thrustappz>0.500000</thrustappz>
+		<aqplaneforce>8.000000</aqplaneforce>
+		<aqplanelimit>0.600000</aqplanelimit>
+		<aqplaneoffset>-0.300000</aqplaneoffset>
+		<waveaudiomult>3.000000</waveaudiomult>
+
+		<moveres>
+			<x>0.700000</x>
+			<y>0.996000</y>
+			<z>0.998000</z>
+		</moveres>
+
+		<turnres>
+			<x>0.850000</x>
+			<y>0.960000</y>
+			<z>0.960000</z>
+		</turnres>
+
+		<looklrbcamheight>3.000000</looklrbcamheight>
+	</boathandling>
+
+</vehicle>

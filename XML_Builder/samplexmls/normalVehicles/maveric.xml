@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vehicle>
+	<basic>
+		<type>car</type>
+		<name>Maverick</name>
+		<anims>null</anims>
+		<comprules>0</comprules>
+		<extraflags>0000</extraflags>
+		<wheelmodel>256</wheelmodel>
+		<wheelscale>0.700000</wheelscale>
+		<immunity>0</immunity>
+	</basic>
+
+	<aidata>
+		<class>ignore</class>
+		<freq>10</freq>
+		<level>7</level>
+	</aidata>
+
+	<colors>
+		<carcol>1,14</carcol>
+		<carcol>1,42</carcol>
+		<carcol>1,57</carcol>
+		<carcol>54,1</carcol>
+		<carcol>1,3</carcol>
+		<carcol>3,1</carcol>
+		<carcol>12,39</carcol>
+		<carcol>74,35</carcol>
+	</colors>
+
+	<audio>
+		<enginefarsample>268</enginefarsample>
+		<enginenearsample>0</enginenearsample>
+		<hornsample>0</hornsample>
+		<hornfreq>26513</hornfreq>
+		<sirensample>0</sirensample>
+		<sirenfreq>9100</sirenfreq>
+		<doorsounds>2</doorsounds>
+	</audio>
+
+	<helidata>
+		<helitype>normal</helitype>
+		<weapons>none</weapons>
+		<rotorradius>6.150000</rotorradius>
+		<rotordammult>1.000000</rotordammult>
+	</helidata>
+
+	<handling>
+		<mass>5000.000000</mass>
+		<percentsubmerged>75</percentsubmerged>
+		<steeringlock>30.000000</steeringlock>
+		<seatoffset>0.300000</seatoffset>
+		<damagemultiplier>0.750000</damagemultiplier>
+		<value>45000</value>
+		<flags>08028000</flags>
+
+		<dimensions>
+			<x>2.500000</x>
+			<y>8.000000</y>
+			<z>2.500000</z>
+		</dimensions>
+
+		<centreofmass>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>-0.100000</z>
+		</centreofmass>
+
+		<traction>
+			<multiplier>0.650000</multiplier>
+			<loss>0.900000</loss>
+			<bias>0.500000</bias>
+		</traction>
+
+		<transmission>
+			<numofgears>1</numofgears>
+			<maxspeed>200.000000</maxspeed>
+			<acceleration>16.000000</acceleration>
+			<drivetype>4</drivetype>
+			<enginetype>P</enginetype>
+		</transmission>
+
+		<brakes>
+			<deceleration>5.000000</deceleration>
+			<bias>0.450000</bias>
+			<abs>0</abs>
+		</brakes>
+
+		<suspension>
+			<forcelevel>5.000000</forcelevel>
+			<dampening>0.150000</dampening>
+			<upperlimit>0.500000</upperlimit>
+			<lowerlimit>-0.050000</lowerlimit>
+			<bias>0.500000</bias>
+			<antidive>0.000000</antidive>
+		</suspension>
+
+		<lights>
+			<front>0</front>
+			<rear>1</rear>
+		</lights>
+	</handling>
+
+	<aerohandling>
+		<thrust>0.400000</thrust>
+		<thrustfalloff>0.750000</thrustfalloff>
+		<yaw>-0.001000</yaw>
+		<yawstab>0.020000</yawstab>
+		<sideslip>0.200000</sideslip>
+		<roll>0.006500</roll>
+		<rollstab>7.000000</rollstab>
+		<pitch>0.006500</pitch>
+		<pitchstab>7.000000</pitchstab>
+		<formlift>0.400000</formlift>
+		<attacklift>0.012000</attacklift>
+		<moveres>0.997000</moveres>
+
+		<turnres>
+			<x>0.800000</x>
+			<y>0.820000</y>
+			<z>0.996000</z>
+		</turnres>
+
+		<speedres>
+			<x>0.000000</x>
+			<y>0.000000</y>
+			<z>7.000000</z>
+		</speedres>
+	</aerohandling>
+
+</vehicle>
