@@ -45,6 +45,9 @@ namespace XML_Builder
             button1.Enabled = false;
             button2.Enabled = false;
 
+            // Creates temp folder
+            Directory.CreateDirectory("samplexmls/temp");
+
             // "carcols.txt" file (stores fixed colors in a temporary file) and "carcolsOriginal.txt" file (stores original colors in a temporary file)
             File.WriteAllText("samplexmls/temp/carcols.txt", File.ReadAllText("samplexmls/originalFiles/carcols.dat"));
             File.WriteAllText("samplexmls/temp/carcolsOriginal.txt", File.ReadAllText("samplexmls/originalFiles/carcols.dat"));
